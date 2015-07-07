@@ -1,0 +1,129 @@
+sb_options.o: sb_options.c \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdc-predef.h \
+ ../config/config.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdio.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/features.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/cdefs.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/wordsize.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include/stddef.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/types.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/typesizes.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/libio.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/_G_config.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/wchar.h \
+ /home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include/stdarg.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio_lim.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/sys_errlist.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdlib.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/waitflags.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/waitstatus.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/endian.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/endian.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/byteswap.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/byteswap-16.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/xlocale.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/types.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/time.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/select.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/select.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/sigset.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/time.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/sysmacros.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/pthreadtypes.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/alloca.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdlib-bsearch.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdlib-float.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/string.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/string.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/string2.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/ctype.h \
+ sb_options.h sb_list.h
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdc-predef.h:
+
+../config/config.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdio.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/features.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/cdefs.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/wordsize.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs-lp64.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include/stddef.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/types.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/typesizes.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/libio.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/_G_config.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/wchar.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include/stdarg.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio_lim.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/sys_errlist.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdlib.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/waitflags.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/waitstatus.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/endian.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/endian.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/byteswap.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/byteswap-16.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/xlocale.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/types.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/time.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/select.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/select.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/sigset.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/time.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/sysmacros.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/pthreadtypes.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/alloca.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdlib-bsearch.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdlib-float.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/string.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/string.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/string2.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/ctype.h:
+
+sb_options.h:
+
+sb_list.h:

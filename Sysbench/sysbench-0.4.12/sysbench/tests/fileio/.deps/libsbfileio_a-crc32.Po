@@ -1,0 +1,54 @@
+libsbfileio_a-crc32.o: crc32.c \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdc-predef.h \
+ crc32.h ../../../config/config.h \
+ /home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include-fixed/limits.h \
+ /home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include-fixed/syslimits.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/limits.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/features.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/cdefs.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/wordsize.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs-lp64.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/posix1_lim.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/local_lim.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/linux/limits.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/posix2_lim.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/xopen_lim.h \
+ /home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio_lim.h \
+ crc32tbl.h
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/stdc-predef.h:
+
+crc32.h:
+
+../../../config/config.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include-fixed/limits.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/lib/gcc/aarch64-linux-gnu/4.9.2/include-fixed/syslimits.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/limits.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/features.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/sys/cdefs.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/wordsize.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/gnu/stubs-lp64.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/posix1_lim.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/local_lim.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/linux/limits.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/posix2_lim.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/xopen_lim.h:
+
+/home/alex/hulk/arm64/SDK-aarch64/sysroot/usr/include/bits/stdio_lim.h:
+
+crc32tbl.h:

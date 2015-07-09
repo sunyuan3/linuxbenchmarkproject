@@ -1,0 +1,80 @@
+cd results && make summary percent 2>/dev/null | more
+make[1]: Entering directory `/root/lmbench3/results'
+
+                 L M B E N C H  3 . 0   S U M M A R Y
+                 ------------------------------------
+		 (Alpha software, do not distribute)
+
+
+Processor, Processes - times in microseconds - smaller is better
+------------------------------------------------------------------------------
+Host                 OS  Mhz null null      open slct sig  sig  fork exec sh  
+                             call  I/O stat clos TCP  inst hndl proc proc proc
+--------- ------------- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+p3        Linux 3.13.0- 2372 0.52 0.67 1.00 2.96 4.38 0.62 1.72 165. 561. 1287
+ubuntu    Linux 3.13.0- 2387 0.51 0.65 1.03 3.02 4.34 0.61 1.73 171. 565. 1300
+
+Basic integer operations - times in nanoseconds - smaller is better
+-------------------------------------------------------------------
+Host                 OS  intgr intgr  intgr  intgr  intgr  
+                          bit   add    mul    div    mod   
+--------- ------------- ------ ------ ------ ------ ------ 
+p3        Linux 3.13.0- 0.4200 0.0600 1.3000   10.2   10.3
+ubuntu    Linux 3.13.0- 0.4200 0.0600 1.3100   10.2   10.3
+
+Basic float operations - times in nanoseconds - smaller is better
+-----------------------------------------------------------------
+Host                 OS  float  float  float  float
+                         add    mul    div    bogo
+--------- ------------- ------ ------ ------ ------ 
+p3        Linux 3.13.0- 1.2700 1.6900 6.0400 5.9300
+ubuntu    Linux 3.13.0- 1.2700 1.6900 6.0600 5.9400
+
+Basic double operations - times in nanoseconds - smaller is better
+------------------------------------------------------------------
+Host                 OS  double double double double
+                         add    mul    div    bogo
+--------- ------------- ------  ------ ------ ------ 
+p3        Linux 3.13.0- 1.2700 2.1200 9.4200 9.3200
+ubuntu    Linux 3.13.0- 1.2700 2.1200 9.4200 9.3100
+
+Context switching - times in microseconds - smaller is better
+-------------------------------------------------------------------------
+Host                 OS  2p/0K 2p/16K 2p/64K 8p/16K 8p/64K 16p/16K 16p/64K
+                         ctxsw  ctxsw  ctxsw ctxsw  ctxsw   ctxsw   ctxsw
+--------- ------------- ------ ------ ------ ------ ------ ------- -------
+p3        Linux 3.13.0- 1.9400 2.1700 2.2900 3.3300 4.1200 3.79000 4.08000
+ubuntu    Linux 3.13.0- 1.9500 2.1700 2.8700 3.0600 4.4500 3.67000 4.39000
+
+*Local* Communication latencies in microseconds - smaller is better
+---------------------------------------------------------------------
+Host                 OS 2p/0K  Pipe AF     UDP  RPC/   TCP  RPC/ TCP
+                        ctxsw       UNIX         UDP         TCP conn
+--------- ------------- ----- ----- ---- ----- ----- ----- ----- ----
+p3        Linux 3.13.0- 1.940 6.837 12.1  18.4        25.9       100.
+ubuntu    Linux 3.13.0- 1.950 6.750 12.6  18.0        25.8        89.
+
+File & VM system latencies in microseconds - smaller is better
+-------------------------------------------------------------------------------
+Host                 OS   0K File      10K File     Mmap    Prot   Page   100fd
+                        Create Delete Create Delete Latency Fault  Fault  selct
+--------- ------------- ------ ------ ------ ------ ------- ----- ------- -----
+p3        Linux 3.13.0-   12.9 8.2871   34.1   15.9   19.6K 0.772         1.835
+ubuntu    Linux 3.13.0-   13.2 7.8688   32.0   14.8   19.9K 0.705         1.834
+
+*Local* Communication bandwidths in MB/s - bigger is better
+-----------------------------------------------------------------------------
+Host                OS  Pipe AF    TCP  File   Mmap  Bcopy  Bcopy  Mem   Mem
+                             UNIX      reread reread (libc) (hand) read write
+--------- ------------- ---- ---- ---- ------ ------ ------ ------ ---- -----
+p3        Linux 3.13.0- 2772 2828 2305 1874.3 2269.6 1078.8 1410.2 2148 2497.
+ubuntu    Linux 3.13.0- 2738 2848 2053 2185.5 2650.3 1040.5 1361.9 2871 2406.
+
+Memory latencies in nanoseconds - smaller is better
+    (WARNING - may not be correct, check graphs)
+------------------------------------------------------------------------------
+Host                 OS   Mhz   L1 $   L2 $    Main mem    Rand mem    Guesses
+--------- -------------   ---   ----   ----    --------    --------    -------
+p3        Linux 3.13.0-  2372 1.4420 4.3790   87.9       172.5
+ubuntu    Linux 3.13.0-  2387 1.6870 3.7420   88.6       193.0
+make[1]: Leaving directory `/root/lmbench3/results'

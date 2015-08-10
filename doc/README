@@ -1,0 +1,72 @@
+----------------------------------------------
+lmbench3 在e6000上编译运行成功
+docker run -ti -v /tmp/lmbench3/:/project/lmbench3 e6000:2 bash -c "cd /project/lmbench3/ && make CC=gcc OS=e6000"
+docker run -ti -v `pwd`:/project/lmbench3 e6000:2 bash -c "cd /project/lmbench3/ && make CC=gcc OS=e6000"
+
+make CC=gcc OS=e6000    生成lmbench3/bin/e6000目录
+cd scripts;env OS=e6000 ./config-run  生成lmbench3/bin/e6000/CONFIG.linux-d3hw
+env OS=e6000 ./results
+log文件存放在lmbench3/results/e6000/linux-d3hw.0
+可以将log文件传递到host上再做make see命令
+----------------------------------------------
+bonnie 在e6000上编译运行成功
+docker run -ti -v `pwd`:/project/bonnie++-1.03e e6000:2 bash -c "cd /project/bonnie++-1.03e && ./configure CXX=g++ CXXFLAGS=-static && make"
+run_test.sh:./bonnie++ -d /tmp -s 1024 -r 512 -u root
+目前使用了静态编译方式
+
+----------------------------------------------
+hackbench 在e6000上编译运行成功
+docker run -ti -v `pwd`:/project/hackbench e6000:2 bash -c "cd /project/hackbench/src && gcc -o hackbench hackbench.c -lpthread -static"
+./hackbench.sh
+
+----------------------------------------------
+interbench在e6000上编译运行成功
+docker run -ti -v `pwd`:/project/interbench-0.30 e6000:2 bash -c "cd /project/interbench-0.30 && gcc interbench.c hackbench.c -o interbench -lpthread -lrt -lnsl -pthread -lm -
+
+static" 
+
+gcc interbench.c hackbench.c -o interbench -lpthread -lrt -lnsl -pthread -lm -static
+----------------------------------------------
+libmicro在e6000上编译运行成功
+docker run -ti -v `pwd`:/project/libMicro-0.4.0 e6000:2 bash -c "cd /project/libMicro-0.4.0 && make CC=gcc"
+./bench
+
+----------------------------------------------
+sysbench在docker镜像中编译错误
+docker run -ti -v `pwd`:/project/sysbench-ne6000:2 bash -c "cd /project/sysbench-0.4.12/sysbench-0.4.12 && ./autogen.sh && ./configure --without-mysql && cp ../libtool-
+
+2.4.5/libtool ./ && make CC=gcc"
+
+
+ 2059  ./autogen.sh 
+ 2060  ./configure 
+ 2061  ./autogen.sh 
+ 2062  ./configure --without-mysql
+ 2063  make
+ 2064  cp ../libtool-2.4.5/libtool ./
+ 2065  make
+ 2066  ls
+ 2067  ./configure --without-mysql
+ 2068  cp ../libtool-2.4.5/libtool ./
+ 2069  ls
+ 2070  make
+ 2071  apt-get install sed
+ 2072  which sed
+ 2073  ln -sf /bin/sed /usr/bin/sed
+ 2074  make
+ 2075  ls
+ 2076  cd sysbench/
+ 2077  ls
+
+
+./sysbench --test=threads --num-threads=$i --thread-yields=100 --thread-locks=2 run >> sysbench.log
+----------------------------------------------
+tiobench 在e6000上编译运行成功
+docker run -ti -v `pwd`:/project/tiobench-0.3.3 e6000:2 bash -c "cd /project/tiobench-0.3.3 && make CC=gcc LINK=gcc"
+run_test.sh
+生成tiobench.log
+----------------------------------------------
+stream 在e6000上编译运行成功
+http://blog.csdn.net/zhu_liangwei/article/details/9123147
+docker run -ti -v /tmp/stream:/project/stream e6000:2 bash -c "cd /project/stream && gcc -O -DSTREAM_ARRAY_SIZE=100000000 stream.c -o stream100M"
+./stream.100M > log

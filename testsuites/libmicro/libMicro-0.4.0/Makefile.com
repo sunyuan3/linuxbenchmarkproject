@@ -38,6 +38,7 @@ EXTRA_CFILES= \
 #
 # some definitions to make getting compiler versions possible - avoid quotes
 #
+CFLAGS=-static
 COMPILER_VERSION_CMD_cc=cc -V 2>&1 | egrep Sun
 COMPILER_VERSION_CMD_gcc=gcc -dumpversion
 COMPILER_VERSION_CMD=$(COMPILER_VERSION_CMD_$(CC))
